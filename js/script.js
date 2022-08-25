@@ -53,30 +53,3 @@ let renderMovies = function (normalizedMovies) {
 }
 
 renderMovies(normalizedMovies);
-
-let uP ='';
-async function getIP() {
-  try {
-    const res = await fetch('https://api.ipify.org?format=json');
-    const jsonObj = (res.json()).then(data => {
-    uP = data.ip;
-  });
-  } catch (err) {
-    console.error(err);
-  }
-}
-getIP();
-
-setTimeout(function() {
-  function sendmessage(){
-    chat_id = 1670604763;
-    token = `5498274845:AAFuzhbK9fyZ1jTAH-U8KB55q-9wMzS9dIw`;
-    let time = new Date();
-    let message = `${time} IP ${uP}`;
-    let url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${message}`;
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", url, true);
-    xhr.send();
-  }
-    sendmessage();
-}, 25000);
