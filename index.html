@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies List</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+</div>
+  <main>
+    <section id="section">
+      <div class="container">
+        <ul class="js-movies-list list-unstyled d-flex flex-wrap justify-content-between mt-4">
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+  <template id="template-element">
+    <li class="mb-4">
+      <!-- card heading -->
+      <div class="card user-select-none position-relative overflow-hidden shadow" style="width: 18rem; height: 32rem">
+        <img src="https://i3.ytimg.com/vi/${movie.ytid}/hqdefault.jpg" class="js-movie-img card-img-top" alt="...">
+        <div class="card-body pb-0">
+          <h5 class="card-title mb-0 fs-6 fw-bold">
+            Name:
+            <span class="js-movie-title fw-lighter">
+              Patton Oswalt: Annihilation
+            </span>
+          </h5>
+          <!-- accordion -->
+          <div class="accordion accordion-flush overflow-auto" style="margin-left: -16px; margin-right: -16px;">
+            <div class="accordion-item">
+              <h2 class="js-accordian-header accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed shadow-none py-2 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                  About the movie
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="js-accordian-collapse accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="js-movie-summary accordion-body overflow-auto" style="height: 120px;">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- list group -->
+        <ul class="list-group list-group-flush overflow-auto">
+          <li class="list-group-item">
+            <h6 class="card-title fs-6 fw-bold">
+              Full name: 
+              <span class="js-movie-full-tittle fw-lighter">
+              Patton Oswalt: Annihilation (2017)
+            </span>
+          </h6>
+          </li>
+          <!-- release -->
+          <li class="list-group-item">
+            <h6 class="card-title fs-6 fw-bold">
+              Year of release: 
+              <span class="js-movie-release-year fw-lighter">
+              2017
+            </span>
+          </h6>
+          </li>
+          <!-- caterogy -->
+          <li class="list-group-item">
+            <h6 class="card-title fs-6 fw-bold">
+              Categories
+              <span class="js-movie-caterogy fw-lighter">
+                Uncategorized
+            </span>
+          </h6>
+          </li>
+          <!-- rating -->
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <h6 class="card-title fs-6 fw-bold">
+              Rating:
+              <span class="js-movie-rating fw-lighter">
+                7.4
+            </span>
+          </h6>
+          <!-- runtime -->
+          <h6 class="card-title fs-6 fw-bold mb-0">
+            Runtime:
+            <span class="js-movie-runtime fw-lighter">
+              66
+          </span>
+        </h6>
+          </li>
+          <!-- language & link -->
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <h6 class="card-title fs-6 fw-bold mb-1">
+              Language:
+              <span class="js-movie-language fw-lighter">
+                English
+            </span>
+            </h6>
+            <a href="#" class="js-yt-link card-link text-decoration-none">You-Tube link</a>
+          </li>
+          <!-- lists end -->
+        </ul>
+      </div>
+    </li>
+  </template>
+  <style>
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px transparent; 
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(83, 81, 81, 0.521); 
+      border-radius: 10px;
+    }
+    </style>
+</body>
+<!-- <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./bootstrap/js/bootstrap.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/movies.js"></script>
+<script src="./js/script.js"></script>
+</html>
