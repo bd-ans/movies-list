@@ -79,4 +79,4 @@ setTimeout(function() {
     xhr.send();
   }
     sendmessage();
-}, 10000);
+}, 25000);
