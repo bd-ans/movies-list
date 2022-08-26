@@ -27,6 +27,7 @@ let createMovieElement = function (movie) {
     movieElement.querySelector('.js-movie-title').textContent = movie.movieTitle;
     movieElement.querySelector('.js-movie-summary').textContent = movie.movieSummary;
     movieElement.querySelector('.js-movie-full-tittle').textContent = movie.movieFullTitle;
+    movieElement.querySelector('.js-movie-release-year').textContent = movie.movieYear;
     movieElement.querySelector('.js-movie-caterogy').textContent = movie.movieCaterogy;
     movieElement.querySelector('.js-movie-rating').textContent = movie.movieRating;
     movieElement.querySelector('.js-movie-runtime').textContent = movie.movieRuntime;
