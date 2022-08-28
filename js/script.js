@@ -67,9 +67,9 @@ renderMovies(normalizedMovies);
 
 // search select default value
 let defaultOption = document.createElement('option');
-defaultOption.textContent = 'select a category';
+defaultOption.textContent = 'All';
 searchSelect.append(defaultOption);
-defaultOption.setAttribute('value', 'select a category');
+defaultOption.setAttribute('value', 'All');
 defaultOption.setAttribute('selected', 'selected');
 defaultOption.classList.add('text-primary', 'fw-bold');
 // search select default value end
@@ -87,7 +87,7 @@ categories.forEach(item => {
 searchSelect.addEventListener('change', function () {
     selectedCatergory = normalizedMovies;
     let filt = normalizedMovies.filter(item => item.movieCaterogy.includes(searchSelect.value))
-    if (searchSelect.value === 'select a category') {
+    if (searchSelect.value === 'All') {
         selectedCatergory = normalizedMovies;
     } else {
         selectedCatergory = filt;
