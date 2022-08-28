@@ -12,6 +12,10 @@
   <main>
     <section id="section">
       <div class="container">
+        <div class="search-box mt-3">
+          <input class="js-search-input" type="text">
+          <select class="js-search-select" name="search-section"></select>
+        </div>
         <ul class="js-movies-list list-unstyled d-flex flex-wrap justify-content-between mt-4">
         </ul>
       </div>
@@ -21,8 +25,8 @@
   <template id="template-element">
     <li class="mb-4">
       <!-- card heading -->
-      <div class="card user-select-none position-relative overflow-hidden shadow" style="width: 18rem; height: 32rem">
-        <img src="https://i3.ytimg.com/vi/${movie.ytid}/hqdefault.jpg" class="js-movie-img card-img-top" alt="...">
+      <div class="card position-relative overflow-hidden shadow" style="width: 18rem; height: 32rem">
+        <img src="https://i3.ytimg.com/vi/${movie.ytid}/hqdefault.jpg" class="js-movie-img card-img-top" alt="..." onerror="this.onerror=null; this.src='Default.jpg'">
         <div class="card-body pb-0">
           <h5 class="card-title mb-0 fs-6 fw-bold">
             Name:

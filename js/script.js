@@ -1,10 +1,16 @@
 const moviesList = $('.js-movies-list');
 const moviesCardTemplate = $('#template-element').content;
 
-let normalizedMovies = [];
+const searchInput = $('.js-search-input');
+const searchSelect = $('.js-search-select');
+const searchBtn = $('.js-search-btn');
 
+let normalizedMovies = [];
+movies = movies.slice(0,200)
+
+// movie to normlaize
 let films = movies.map((movie, i) => {
-  normalizedMovies.push({
+normalizedMovies.push({
     movieTitle: movie.Title,
     movieFullTitle: movie.fulltitle,
     movieYear: movie.movie_year,
@@ -19,7 +25,9 @@ let films = movies.map((movie, i) => {
     id: i
     })
 });
+// movie to normlaize end
 
+// creating elemnts for movies list
 let createMovieElement = function (movie) {
     let movieElement = moviesCardTemplate.cloneNode(true);
     movieElement.querySelector('.js-movie-img').src = movie.img;
@@ -37,12 +45,13 @@ let createMovieElement = function (movie) {
     movieElement.querySelector('.accordion-button').setAttribute('data-bs-target', `#flush-collapse${movie.id}`);
     movieElement.querySelector('.accordion-button').setAttribute('aria-controls', `flush-collapse${movie.id}`);
     movieElement.querySelector('.js-accordian-collapse').id = `flush-collapse${movie.id}`;
-
     return movieElement;
 }
+// end creating elemnts for movies list
 
+// main render function
 let renderMovies = function (normalizedMovies) {
-    moviesList.innerHTML = '';
+    moviesList.innerHTML = null;
     
     let fragment = document.createDocumentFragment();
 
@@ -54,3 +63,45 @@ let renderMovies = function (normalizedMovies) {
 }
 
 renderMovies(normalizedMovies);
+// main render function end
+
+// search select default value
+let defaultOption = document.createElement('option');
+defaultOption.textContent = 'All';
+searchSelect.append(defaultOption);
+defaultOption.setAttribute('value', 'All');
+defaultOption.setAttribute('selected', 'selected');
+defaultOption.classList.add('text-primary', 'fw-bold');
+// search select default value end
+
+// catergory select
+let selectedCatergory = normalizedMovies;
+let categories = [...new Set(movies.map(item => item.Categories.split('|')).flat())]
+categories.forEach(item => {
+    let option = document.createElement('option')
+    option.textContent = item
+    option.value = item
+    searchSelect.append(option)
+})
+
+searchSelect.addEventListener('change', function () {
+    selectedCatergory = normalizedMovies;
+    let filt = normalizedMovies.filter(item => item.movieCaterogy.includes(searchSelect.value))
+    if (searchSelect.value === 'All') {
+        selectedCatergory = normalizedMovies;
+    } else {
+        selectedCatergory = filt;
+    }
+    searchInput.value = null;
+    renderMovies(selectedCatergory);
+});
+// catergory select end
+
+// Search input
+searchInput.oninput = function () {
+    let value = searchInput.value;
+    let regExp = new RegExp(value, 'gi');
+    let filt = selectedCatergory.filter(item => regExp.test(item.movieTitle));
+    renderMovies(filt);
+}
+// Search input end
