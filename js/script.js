@@ -85,7 +85,7 @@ categories.forEach(item => {
 })
 
 searchSelect.addEventListener('change', function () {
-    selectedCatergory = normalizedMovies;
+    // selectedCatergory = normalizedMovies;
     let filt = normalizedMovies.filter(item => item.movieCaterogy.includes(searchSelect.value))
     if (searchSelect.value === 'All') {
         selectedCatergory = normalizedMovies;
