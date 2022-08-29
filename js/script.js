@@ -76,7 +76,7 @@ defaultOption.classList.add('text-primary', 'fw-bold');
 
 // catergory select
 let selectedCatergory = normalizedMovies;
-let categories = [...new Set(movies.map(item => item.Categories.split('|')).flat())]
+let categories = [...new Set(normalizedMovies.map(item => item.movieCaterogy.split('|')).flat())]
 categories.forEach(item => {
     let option = document.createElement('option')
     option.textContent = item
