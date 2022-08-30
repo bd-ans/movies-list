@@ -6,6 +6,7 @@ const searchSelect = $('.js-search-select');
 const searchSort = $('.js-sort-select');
 const searchBtn = $('.js-search-btn');
 
+
 let normalizedMovies = [];
 movies = movies.slice(0, 5);
 
@@ -27,11 +28,13 @@ normalizedMovies.push({
     })
 });
 // movie to normlaize end
+let normalizedMoviesClone = [];
 
 let cloneNormalizedMovies = normalizedMovies.slice();
 let cloneNormalizedMoviesOne = normalizedMovies.slice();
-let cloneNormalizedMoviesTwo = normalizedMovies.slice();
+const cloneNormalizedMoviesTwo = normalizedMovies.slice();
 
+let efefefefef = cloneNormalizedMovies.slice();
 
 // creating elemnts for movies list
 let createMovieElement = function (movie) {
@@ -138,11 +141,12 @@ searchSort.addEventListener('change', function () {
         stringSort = 'All';
         if (searchSelect.value === 'All') {
             slectedSort = cloneNormalizedMoviesTwo;
-            selectedCatergory = slectedSort;
+            // selectedCatergory = slectedSort;
             mainData = slectedSort;
+        } else {
+            slectedSort = selectedCatergory;
+            mainData = selectedCatergory;
         }
-        slectedSort = selectedCatergory;
-        mainData = selectedCatergory;
     } else {
         if (searchSort.value === 'A-Z') {
             let dddclone = selectedCatergory.slice();
