@@ -8,7 +8,7 @@ const searchBtn = $('.js-search-btn');
 
 
 let normalizedMovies = [];
-movies = movies.slice(0, 5);
+movies = movies.slice(0, 200);
 
 // movie to normlaize
 let films = movies.map((movie, i) => {
