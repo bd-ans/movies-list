@@ -145,28 +145,28 @@ searchSort.addEventListener('change', function () {
         mainData = selectedCatergory;
     } else {
         if (searchSort.value === 'A-Z') {
-            let dddclone = selectedCatergory.slice();
+            let selectCaterogyClone = selectedCatergory.slice();
             slectedSort = selectedCatergory.sort((a, b) => a.movieTitle.localeCompare(b.movieTitle));
             stringSort = 'A-Z';
-            selectedCatergory = dddclone;
+            selectedCatergory = selectCaterogyClone;
             mainData = slectedSort;
         } else if (searchSort.value === 'Z-A') {
-            let dddclonee = selectedCatergory.slice();
+            let selectCaterogyClone = selectedCatergory.slice();
             slectedSort = selectedCatergory.sort((a, b) => b.movieTitle.localeCompare(a.movieTitle));
             stringSort = 'Z-A';
-            selectedCatergory = dddclonee;
+            selectedCatergory = selectCaterogyClone;
             mainData = slectedSort;
         } else if (searchSort.value === '0-10') {
-            let dddcloneee = selectedCatergory.slice();
+            let selectCaterogyClone = selectedCatergory.slice();
             slectedSort = selectedCatergory.sort((a, b) => a.movieRating - b.movieRating);
             stringSort = '0-10';
-            selectedCatergory = dddcloneee;
+            selectedCatergory = selectCaterogyClone;
             mainData = slectedSort;
         } else if (searchSort.value === '10-0') {
-            let dddcloneeee = selectedCatergory.slice();
+            let selectCaterogyClone = selectedCatergory.slice();
             slectedSort = selectedCatergory.sort((a, b) => b.movieRating - a.movieRating);
             stringSort = '10-0';
-            selectedCatergory = dddcloneeee;
+            selectedCatergory = selectCaterogyClone;
             mainData = slectedSort;
         }
     }
