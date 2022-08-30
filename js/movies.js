@@ -5,7 +5,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Uncategorized",
     "summary": "Patton Oswald, despite a personal tragedy, produces his best standup yet. Focusing on the tribulations of the Trump era and life after the loss of a loved one, Patton Oswald continues his journey to contribute joy to the world.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Patton-Oswalt-Annihilation-Movie-Poster.jpg",
     "imdb_id": "tt7026230",
     "imdb_rating": 7.4,
     "runtime": 66, 
@@ -18,7 +17,6 @@ var movies = [
     "movie_year": 2005,
     "Categories": "Documentary|Music",
     "summary": "A recovering alcoholic and recently converted Mormon, Arthur \"Killer\" Kane, of the rock band The New York Dolls, is given a chance at reuniting with his band after 30 years.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/New-York-Doll-Movie-Poster.jpg",
     "imdb_id": "tt0436629",
     "imdb_rating": 7.9,
     "runtime": 75,
@@ -31,12 +29,11 @@ var movies = [
     "movie_year": 2001,
     "Categories": "Adventure|Animation|Comedy|Family|Fantasy",
     "summary": "After everyone is snowed in at the House of Mouse, Mickey suggests they throw their own Christmas party. Everyone is happy, except for Donald who just isn't in to the Christmas spirit. So Mickey shows a series of cartoons that show just what Christmas is all about. It features a star studded cast of Disney characters from everyone's favorite animated Disney movies.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Mickeys-Magical-Christmas-Snowed-in-at-the-House-of-Mouse-Movie-Poster.jpg",
     "imdb_id": "tt0300195",
     "imdb_rating": 6.8,
     "runtime": 65,
     "language": "English",
-    "ytid": "uCKwHHftrU4"
+    "ytid": "UlxH3aJOZvs"
   },
   {
     "Title": "Mickey's House of Villains",
@@ -44,21 +41,18 @@ var movies = [
     "movie_year": 2001,
     "Categories": "Animation|Comedy|Family|Fantasy|Horror",
     "summary": "The villains from the popular animated Disney films are gathered at the House of Mouse with plans to take over. Soon, the villains take over the house and kick out Mickey, Donald and Goofy. It's all up to Mickey and his friends to overthrow evil and return the House of Mouse to normal--or as close to normal as it get's.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Mickeys-House-of-Villains-Movie-Poster.jpg",
     "imdb_id": "tt0329374",
     "imdb_rating": 6.6,
-    "runtime": 0,
+    "runtime": 35,
     "language": "English",
-    "ytid": "JA03ciYt-Ek"
+    "ytid": "3hoThry5WsY"
   },
   {
     "Title": "And Then I Go",
     "fulltitle": "And Then I Go (2017)",
     "movie_year": 2017,
     "Categories": "Drama",
-    "summary": "In the cruel world of junior high, Edwin suffers in a state of anxiety and alienation alongside his only friend, Flake. Misunderstood by their families and demoralized at school daily, their fury simmers quietly until an idea for vengeance offers them a terrifying release. Based on the acclaimed novel \"Project X\" by Jim Shepard, this unflinching look at adolescence explores how the powerful bonds of childhood friendship and search for belonging can become a matter of life or death.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/And-Then-I-Go-Movie-Poster.jpg",
-    "imdb_id": "tt2018111",
+    "summary": "In the cruel world of junior high, Edwin suffers in a state of anxiety and alienation alongside his only friend, Flake. Misunderstood by their families and demoralized at school daily, their fury simmers quietly until an idea for vengeance offers them a terrifying release. Based on the acclaimed novel \"Project X\" by Jim Shepard, this unflinching look at adolescence explores how the powerful bonds of childhood friendship and search for belonging can become a matter of life or death.",    "imdb_id": "tt2018111",
     "imdb_rating": 7.6,
     "runtime": 99,
     "language": "English",
@@ -70,7 +64,6 @@ var movies = [
     "movie_year": 2000,
     "Categories": "Animation|Comedy|Family|Sport",
     "summary": "It's a big time in Max's life. He's college bound with his friends and finally free of his embarrassing father as he strives to be a top contender for the X-Games. Unfortunately, Goofy loses his job and learns that he cannot get another job without a college degree. To his son's mortification, Goofy decides to join him in his campus to get that degree. Desperate to distract his father, Max talks him into joining the competing Gamma Fraternity team and introduces him to a wonderful librarian who shares his nostalgic love for 1970's pastimes. Unfortunately, things do not go according to plan as events put this father-son relationship to the test.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/An-Extremely-Goofy-Movie-Movie-Poster.jpg",
     "imdb_id": "tt0208185",
     "imdb_rating": 6.4,
     "runtime": 79,
@@ -83,7 +76,6 @@ var movies = [
     "movie_year": 2018,
     "Categories": "Adventure|Animation|Comedy|Family|Fantasy",
     "summary": "Based on the books by Beatrix Potter: Peter Rabbit (James Corden;) his three sisters: Flopsy (Margot Robbie,) Mopsy (Elizabeth Debicki) and Cotton Tail (Daisy Ridley) and their cousin Benjamin (Colin Moody) enjoy their days harassing Mr McGregor in his vegetable garden. Until one day he dies and no one can stop them roaming across his house and lands for a full day or so. However, when one of Mr McGregor's relatives inherits the house and goes to check it out, he finds much more than he bargained for. What ensues, is a battle of wills between the new Mr McGregor and the rabbits. But when he starts to fall in love with Bea (Rose Byrne,) a real lover of all nature, his feelings towards them begin to change. But is it too late?",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Peter-Rabbit-Movie-Poster.jpg",
     "imdb_id": "tt5117670",
     "imdb_rating": 6.6,
     "runtime": 95,
@@ -96,7 +88,6 @@ var movies = [
     "movie_year": 2007,
     "Categories": "Uncategorized",
     "summary": "Julie's boyfriend Ismaël lives with her; rather than worry about the time he spends with his colleague Alice, Julie invites Alice to join them. The three walk the streets of Paris, party, read, and sleep together. Sometimes it's lighthearted, sometimes there are jealousies. Then death strikes. In various ways, those left come to terms with the departure and absence of a loved one: showing concern, eating together, attempting new relationships, trying to \"be there\" for the other. Then, the spirit returns and new commitments are possible. The romantic elements of musical comedy play in contrast to the ambivalence of the lyrics and the story.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Love-Songs-Movie-Poster.jpg",
     "imdb_id": "tt0996605",
     "imdb_rating": 7.2,
     "runtime": 91,
@@ -109,7 +100,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Uncategorized",
     "summary": "89 tells the incredible story of one of football's greatest triumphs: when against all odds Arsenal snatched the Championship title from Liverpool at Anfield in the last minute of the last game of the 1988/89 season. It's a universal tale of a band of brothers who, led by a charismatic and deeply respected manager, came together to defy the odds and create history. Mixing archive and previously unseen footage with revealing interviews, insights and memories from the original squad, game officials, famous fans and the people who were there on the night this is the definitive account of a watershed moment in football and a must-watch for any sports fan.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/89-Movie-Poster.jpg",
     "imdb_id": "tt7614404",
     "imdb_rating": 8.1,
     "runtime": 91,
@@ -122,7 +112,6 @@ var movies = [
     "movie_year": 2011,
     "Categories": "Drama",
     "summary": "The illegitimate orphan child, 12-year-old Max, is sold by the local minister for a basket of food to the Bösiger family, who own a mountain farm. Max' initial hope of finally finding a loving home is brutally shattered: The farmer and his wife treat Max like livestock, and their son Jacob humiliates and abuses him. Only the local teacher notices the child suffering on the farm.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/The-Foster-Boy-Movie-Poster.jpg",
     "imdb_id": "tt2057931",
     "imdb_rating": 7.4,
     "runtime": 107,
@@ -135,7 +124,6 @@ var movies = [
     "movie_year": 2018,
     "Categories": "Drama|Music|Romance",
     "summary": "After being gone for a decade a country star returns home to the love he left behind.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Forever-My-Girl-Movie-Poster.jpg",
     "imdb_id": "tt4103724",
     "imdb_rating": 6.4,
     "runtime": 108,
@@ -148,7 +136,6 @@ var movies = [
     "movie_year": 2018,
     "Categories": "Comedy|Documentary",
     "summary": "Comedian Tom Segura rants about funny things about pop culture and the way of living in 2018.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Tom-Segura-Disgraceful-Movie-Poster.jpg",
     "imdb_id": "tt7379330",
     "imdb_rating": 7.5,
     "runtime": 0,
@@ -161,8 +148,7 @@ var movies = [
     "movie_year": 2015,
     "Categories": "Documentary",
     "summary": "Professor Marcus du Sautoy demystifies the hidden world of algorithms and reveals where these 2,000-year-old problem solvers came from, how they work, and what they have achieved.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/The-Secret-Rules-of-Modern-Living-Algorithms-Movie-Poster.jpg",
-    "imdb_id": "tt5818010",
+    "imdb_id": "tt5818010"
     "imdb_rating": 7.5,
     "runtime": 58,
     "language": "English",
@@ -174,7 +160,6 @@ var movies = [
     "movie_year": 2015,
     "Categories": "Family",
     "summary": "Nothing is impossible for a group of young campers, friends and enemies alike, on a weekend retreat at Camp Pinnacle. But what starts as an exciting wilderness adventure turns into trouble when a young camper goes missing and the rest of the group must set out to find him. The campers are forced to overcome their differences and band together to re-claim their weekend and make it out of the woods before dark!",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Secrets-in-the-Fall-Movie-Poster.jpg",
     "imdb_id": "tt2522908",
     "imdb_rating": 7.3,
     "runtime": 0,
@@ -187,7 +172,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Comedy|Drama",
     "summary": "Adam unexpectedly visits his family house at Christmas after a few years of working abroad. No family member knows about his secret plans and the real reasons of his visit.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Silent-Night-Movie-Poster.jpg",
     "imdb_id": "tt7133554",
     "imdb_rating": 7.5,
     "runtime": 100,
@@ -200,7 +184,6 @@ var movies = [
     "movie_year": 2018,
     "Categories": "Action|Animation",
     "summary": "Task Force X targets a powerful mystical object that they will risk their lives to steal.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Suicide-Squad-Hell-to-Pay-Movie-Poster.jpg",
     "imdb_id": "tt7167602",
     "imdb_rating": 7.2,
     "runtime": 86,
@@ -213,7 +196,6 @@ var movies = [
     "movie_year": 2018,
     "Categories": "Fantasy|Horror",
     "summary": "Anna spends her entire childhood under the care of a mysterious man she only knows as Daddy. He keeps her locked in an attic making her fear the Wildling, a child-eating monster that roams the outside. At age 16, Anna is freed by small-town sheriff Ellen Cooper who helps her start a new life as a normal teenager. But as Anna's body begins to blossom, her childhood nightmares return with a vengeance, leading to the conclusion of a terrifying secret.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Wildling-Movie-Poster.jpg",
     "imdb_id": "tt5085924",
     "imdb_rating": 6.1,
     "runtime": 92,
@@ -226,7 +208,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Action|Sci-Fi",
     "summary": "A dystopian thriller set in the year 2030 that sees the world in a permanent state of economic recession and facing serious environmental problems as a result of global warming.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/The-Humanity-Bureau-Movie-Poster.jpg",
     "imdb_id": "tt6143568",
     "imdb_rating": 6.1,
     "runtime": 95,
@@ -239,7 +220,6 @@ var movies = [
     "movie_year": 2016,
     "Categories": "Documentary|Drama|News",
     "summary": "Farewell, Ferris Wheel examines the link between America's carnival industry and a small Mexican town that legally provides one third of the carnival's labor. However, increased regulations are compromising this longstanding connection, putting both the industry and its workers in jeopardy.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Farewell-Ferris-Wheel-Movie-Poster.jpg",
     "imdb_id": "tt2349677",
     "imdb_rating": 7.4,
     "runtime": 72,
@@ -265,7 +245,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Documentary|History|Sport",
     "summary": "The mysteries surrounding her father's death in the Vietnam war lead ultra-endurance mountain biker Rebecca Rusch on an emotional journey as she pedals 1200 miles of the Ho Chi Minh trail.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Blood-Road-Movie-Poster.jpg",
     "imdb_id": "tt6900092",
     "imdb_rating": 6.9,
     "runtime": 96,
@@ -278,7 +257,6 @@ var movies = [
     "movie_year": 2018,
     "Categories": "Documentary",
     "summary": "A look at the life and career of professional wrestler André Roussimoff, who gained notoriety in the 1980s as Andre the Giant.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Andre-the-Giant-Movie-Poster.jpg",
     "imdb_id": "tt6543420",
     "imdb_rating": 8.2,
     "runtime": 85,
@@ -291,7 +269,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Thriller",
     "summary": "A pharmaceutical sales rep visits a small town in Louisiana on business. He finds himself in a dark world of corruption and murder with 24 hours to live, running from the police, the mob and a sheriff that wants him dead.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Dead-on-Arrival-Movie-Poster.jpg",
     "imdb_id": "tt5903088",
     "imdb_rating": 6.9,
     "runtime": 97,
@@ -304,7 +281,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Documentary",
     "summary": "Bjarke Ingels started out as a young man dreaming of creating cartoons. Now, he has been named \"one of architecture's biggest innovators\" by The Wall Street Journal and one of The 100 Most Influential People on the planet by TIME Magazine. BIG TIME follows Bjarke during the course of 7 years (2009-2016), while he struggles to finish his biggest project so far. We are let into Bjarke's creative processes as well as the endless compromises that his work entails, and we are on the side when his personal life starts putting pressure on him, too. In addition to the recently opened architectural marvel VIA 57 West (625 West 57th Street), Bjarke Ingels' company Bjarke Ingels Group (BIG) was given the task of designing and building one of the skyscrapers which will replace Two World Trade Center in Manhattan. While Bjarke is creating these buildings, which will change the New York skyline, he is hit by health-related issues. The Film offers an intimate look into the innovative and ambitious ...",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Big-Time-Movie-Poster.jpg",
     "imdb_id": "tt7630164",
     "imdb_rating": 6.2,
     "runtime": 93,
@@ -317,7 +293,6 @@ var movies = [
     "movie_year": 2016,
     "Categories": "Adventure|Comedy|Family",
     "summary": "Two teen rival babysitters, Jenny and Lola, team up to hunt down one of their kids who accidentally runs away into the big city without any supervision.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Adventures-in-Babysitting-Movie-Poster.jpg",
     "imdb_id": "tt4456850",
     "imdb_rating": 6.1,
     "runtime": 105,
@@ -330,7 +305,6 @@ var movies = [
     "movie_year": 2005,
     "Categories": "Documentary",
     "summary": "An intimate portrait of a Chinese-European couple in New Zealand, and their journey to get a blessing for marriage from traditional Chinese parents.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Banana-in-a-Nutshell-Movie-Poster.jpg",
     "imdb_id": "tt1537196",
     "imdb_rating": 6.6,
     "runtime": 0,
@@ -343,7 +317,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Adventure|Drama|Western",
     "summary": "In 1892, after nearly two decades of fighting the Cheyenne, the Apache, and the Comanche natives, the United States Cavalry Captain and war hero, Joseph Blocker, is ordered to escort the ailing Cheyenne chief, Yellow Hawk--his most despised enemy--to his ancestral home in Montana's Valley of the Bears. Nauseated with a baleful anger, Joseph's unwelcome final assignment in the feral American landscape is further complicated, when the widowed settler, Rosalie Quaid, is taken in by the band of soldiers, as aggressive packs of marauding Comanches who are still on the warpath, are thirsty for blood. In a territory crawling with hostiles, can the seasoned Captain do his duty one last time?",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Hostiles-Movie-Poster.jpg",
     "imdb_id": "tt5478478",
     "imdb_rating": 7.3,
     "runtime": 134,
@@ -356,7 +329,6 @@ var movies = [
     "movie_year": 2018,
     "Categories": "Action|Sci-Fi|Thriller",
     "summary": "In the epic finale to The Maze Runner Saga, Thomas leads his group of escaped Gladers on their final and most dangerous mission yet. To save their friends, they must break into the legendary last city, a WCKD controlled labyrinth that may turn out to be the deadliest maze of all. Anyone who makes it out alive will get the answers to the questions the Gladers have been asking since they first arrived in the maze. Will Thomas and the crew make it out alive? Or will Ava Paige get her way?",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Maze-Runner-The-Death-Cure-Movie-Poster.jpg",
     "imdb_id": "tt4500922",
     "imdb_rating": 6.5,
     "runtime": 141,
@@ -369,7 +341,6 @@ var movies = [
     "movie_year": 2018,
     "Categories": "Action|Crime|Drama|Mystery|Thriller",
     "summary": "A gritty L.A crime saga which follows the intersecting and often personally connected lives of an elite unit of the LA County Sheriff's Dept. and the state's most successful bank robbery crew as the outlaws plan a seemingly impossible heist on the Federal Reserve Bank of downtown Los Angeles.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Den-of-Thieves-Movie-Poster.jpg",
     "imdb_id": "tt1259528",
     "imdb_rating": 7,
     "runtime": 140,
@@ -382,7 +353,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Action|Crime|Thriller",
     "summary": "The son (Lee Jong-Suk) of a high-ranking North Korean official is suspected of committing serial murders around the world. To stop the killer, South Korea, North Korea and Interpol chase after him.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/V.I.P.-Movie-Poster.jpg",
     "imdb_id": "tt6413410",
     "imdb_rating": 6.4,
     "runtime": 128,
@@ -395,7 +365,6 @@ var movies = [
     "movie_year": 2007,
     "Categories": "Comedy|Music",
     "summary": "The up-and-down-and-up-again story of musician Dewey Cox, whose songs would change a nation. On his rock 'n roll spiral, Cox sleeps with 411 women, marries three times, has 36 kids, stars in his own 70s TV show, collects friends ranging from Elvis to the Beatles to a chimp, and gets addicted to - and then kicks - every drug known to man; but despite it all, Cox grows into a national icon and eventually earns the love of a good woman - longtime backup singer Darlene.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Walk-Hard-The-Dewey-Cox-Story-Movie-Poster.jpg",
     "imdb_id": "tt0841046",
     "imdb_rating": 6.8,
     "runtime": 96,
@@ -408,7 +377,6 @@ var movies = [
     "movie_year": 2003,
     "Categories": "Comedy|Family|Fantasy|Music|Romance",
     "summary": "The wide generation gap between Tess Coleman and her teenage daughter Anna is more than evident. They simply cannot understand each other's preferences. On a Thursday night they have a big argument in a Chinese restaurant. Both receive a fortune cookie each from the restaurant owner's mother which causes them to switch bodies next day. As they adjust with their new personalities, they begin to understand each other more and eventually it's the mutual self-respect that sorts the things out.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Freaky-Friday-Movie-Poster.jpg",
     "imdb_id": "tt0322330",
     "imdb_rating": 6.2,
     "runtime": 97,
@@ -421,7 +389,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Comedy",
     "summary": "In the same night that happens a blood red moon, some longtime friends reunite to dinner: the group is formed by plastic surgeon Alfonso and his wife, psychologist Eva, who are the hosts of the dinner; lawyers Antonio and his wife Ana; taxi driver Eduardo and his young and recent wife, veterinary Blanca; and finally Pepe, a former gym teacher actually unemployed, who surprisingly appears without Lucía, his recent girlfriend. Motivated by Blanca, who have some suspects about the group by the behaviors of some of them, she proposes a game where all diners leave their cell phones on the table, at the condition to say to everyone the contents of all text and voice messages. Starting like an innocent game, the progressive revelation of secrets as they appear cause a series the events each time more dramatics: Alfonso suspects that Eva has an affair, Ana thinks wrongly that Antonio is homosexual, Blanca realizes a horrible side about her marriage with Eduardo, and Pepe tries to keep hidden ...",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Perfect-Strangers-Movie-Poster.jpg",
     "imdb_id": "tt6101820",
     "imdb_rating": 7,
     "runtime": 97,
@@ -434,7 +401,6 @@ var movies = [
     "movie_year": 2018,
     "Categories": "Biography|Drama",
     "summary": "The film centers on Joe Paterno, who, after becoming the winningest coach in college football history, is embroiled in Penn State's Jerry Sandusky sexual abuse scandal, challenging his legacy and forcing him to face questions of institutional failure regarding the victims.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Paterno-Movie-Poster.jpg",
     "imdb_id": "tt2388986",
     "imdb_rating": 6.6,
     "runtime": 105,
@@ -447,7 +413,6 @@ var movies = [
     "movie_year": 2013,
     "Categories": "Documentary",
     "summary": "13 of Edward Hopper's paintings are brought alive by the film, telling the story of a woman, whose thoughts, emotions and contemplations let us observe an era in American history. Shirley is a woman in America in the 1930s, '40s, '50s, and early '60s. A woman who would like to influence the course of history with her professional and socio political involvement.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Shirley-Visions-of-Reality-Movie-Poster.jpg",
     "imdb_id": "tt2636806",
     "imdb_rating": 6.5,
     "runtime": 92,
@@ -460,7 +425,6 @@ var movies = [
     "movie_year": 2007,
     "Categories": "Animation|Drama|Romance",
     "summary": "Takaki and Akari are two classmates in elementary school. During their time together they have become close friends. Their relationship is tested when Akari moves to another city because of her parents' jobs. Both of them struggle to keep their friendship alive, as time and distance slowly pulls them apart. When Takaki finds out that he is moving further away, he decides to visit Akari one last time.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/5-Centimeters-Per-Second-Movie-Poster.jpg",
     "imdb_id": "tt0983213",
     "imdb_rating": 7.7,
     "runtime": 63,
@@ -473,7 +437,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Documentary",
     "summary": "Agnes Varda, one of the leading lights of France's honored French New Wave cinema era, and professional photographer and muralist, J.R., partake on a special art project. Together, they travel around France in a special box truck equipped as a portable photo booth and traveling printing facility as they take photographs of people around the country. With that inspiration, they also create special colossal mural pictures of individuals, communities and places they want to honor and celebrate. Along the way, the old cinematic veteran and the young artistic idealist enjoy an odd friendship as they chat and explore their views on the world as only they can.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Faces-Places-Movie-Poster.jpg",
     "imdb_id": "tt5598102",
     "imdb_rating": 8,
     "runtime": 89,
@@ -486,7 +449,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Biography|Drama|History|Thriller",
     "summary": "When American military analyst, Daniel Ellsberg, realizes to his disgust the depths of the US government's deceptions about the futility of the Vietnam War, he takes action by copying top-secret documents that would become the Pentagon Papers. Later, Washington Post owner, Kay Graham, is still adjusting to taking over her late husband's business when editor Ben Bradlee discovers the New York Times has scooped them with an explosive expose on those papers. Determined to compete, Post reporters find Ellsberg himself and a complete copy of those papers. However, the Post's plans to publish their findings are put in jeopardy with a Federal restraining order that could get them all indicted for Contempt. Now, Kay Graham must decide whether to back down for the safety of her paper or publish and fight for the Freedom of the Press. In doing so, Graham and her staff join a fight that would have America's democratic ideals in the balance.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/The-Post-Movie-Poster.jpg",
     "imdb_id": "tt6294822",
     "imdb_rating": 7.2,
     "runtime": 116,
@@ -499,7 +461,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Drama|Family",
     "summary": "Takumi is on his class' community outreach group. His teacher assigns more students to the group including a student who, due to a mishap, has foregone speaking. The class has to perform a musical, but volunteers brave enough to perform are hard to come by. The reluctance slowly begins to wash away when the aforementioned girl makes an effort to perform. As the day of the performance approaches will the students be able to overcome their reluctance and go for it?",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/The-Anthem-of-the-Heart-Movie-Poster.jpg",
     "imdb_id": "tt6738046",
     "imdb_rating": 6.2,
     "runtime": 119,
@@ -512,7 +473,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Drama|Romance",
     "summary": "Hibiki is an awkward, 17-year-old high school sophomore who hasn't known romance. But she's about to fall in love for the very first time. With whom? A man who isn't great with words, but compassionate about his students. It's her history teacher, Mr. Ito. \"Is it okay if I fall for you?\" Hibiki asks. \"I'm afraid I can't return those feelings,\" is Ito's reply. Hibiki's first love crashes before takeoff. But it doesn't matter. \"Still I want to cherish my crush anyway.\" A teacher's heart begins to turn by a student's pure love.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/My-Teacher-Movie-Poster.jpg",
     "imdb_id": "tt6190198",
     "imdb_rating": 6,
     "runtime": 113,
@@ -525,7 +485,6 @@ var movies = [
     "movie_year": 2017,
     "Categories": "Drama|Mystery|Thriller",
     "summary": "Balancing between feverish dreamlike hallucinations of a tormented past and a grim disoriented reality, the grizzled Joe--a traumatised Gulf War veteran and now an unflinching hired gun who lives with his frail elderly mother--has just finished successfully yet another job. With an infernal reputation of being a brutal man of results, the specialised in recovering missing teens enforcer will embark on a blood-drenched rescue mission, when Nina, the innocent 13-year-old daughter of an ambitious New York senator, never returns home. But amidst half-baked leads and a desperate desire to shake off his shoulders the heavy burden of a personal hell, Joe's frenzied plummet into the depths of Tartarus is inevitable, and every step Joe takes to flee the pain, brings him closer to the horrors of insanity. In the end, what is real, and what is a dream? Can there be a new chapter in Joe's life when he keeps running around in circles?",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/You-Were-Never-Really-Here-Movie-Poster.jpg",
     "imdb_id": "tt5742374",
     "imdb_rating": 7.1,
     "runtime": 89,
@@ -538,7 +497,6 @@ var movies = [
     "movie_year": 2014,
     "Categories": "Drama|Horror|Romance|Thriller",
     "summary": "A decade after Cathy, Christopher, and Carrie escaped from their grandparents' attic at Foxworth Hall, Petals on the Wind continues to follow the twisted plight of the family as they attempt to put their sordid past behind them, but soon discover certain secrets can't be left behind. When Cathy finds herself in an abusive relationship with a fellow dancer, Julian, Christopher and Cathy are forced to face the forbidden feelings they developed for one another while coming of age during captivity. But when tragedy strikes the Dollangangers once again, Cathy returns to Foxworth Hall to confront her grandmother and seek revenge on her mother with a plan to seduce her husband Bart. When Christopher runs to Cathy's side, the two are determined to start over again - together.",
-    "ImageURL": "https://hydramovies.com/wp-content/uploads/2018/04/Petals-on-the-Wind-Movie-Poster.jpg",
     "imdb_id": "tt3496892",
     "imdb_rating": 6.3,
     "runtime": 85,
@@ -790,7 +748,7 @@ var movies = [
     "imdb_rating": 6.1,
     "runtime": 90,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Happy End",
@@ -907,7 +865,7 @@ var movies = [
     "imdb_rating": 6.3,
     "runtime": 125,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Ichi the Killer",
@@ -1323,7 +1281,7 @@ var movies = [
     "imdb_rating": 7.2,
     "runtime": 75,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Fassbinder",
@@ -1336,7 +1294,7 @@ var movies = [
     "imdb_rating": 6.6,
     "runtime": 95,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Black Bread",
@@ -1934,7 +1892,7 @@ var movies = [
     "imdb_rating": 6.3,
     "runtime": 106,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "The Body",
@@ -9032,7 +8990,7 @@ var movies = [
     "imdb_rating": 7.3,
     "runtime": 111,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "The Time Traveler's Wife",
@@ -13166,7 +13124,7 @@ var movies = [
     "imdb_rating": 6.2,
     "runtime": 85,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "The Grand Seduction",
@@ -13179,7 +13137,7 @@ var movies = [
     "imdb_rating": 7,
     "runtime": 113,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Flowers in the Attic",
@@ -13205,7 +13163,7 @@ var movies = [
     "imdb_rating": 6.7,
     "runtime": 26,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "The Final Girls",
@@ -13244,7 +13202,7 @@ var movies = [
     "imdb_rating": 6.6,
     "runtime": 104,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Cop Car",
@@ -13257,7 +13215,7 @@ var movies = [
     "imdb_rating": 6.3,
     "runtime": 88,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Tomorrowland",
@@ -13270,7 +13228,7 @@ var movies = [
     "imdb_rating": 6.5,
     "runtime": 130,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Me and Earl and the Dying Girl",
@@ -13283,7 +13241,7 @@ var movies = [
     "imdb_rating": 7.8,
     "runtime": 105,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Rhymes for Young Ghouls",
@@ -13296,7 +13254,7 @@ var movies = [
     "imdb_rating": 6.5,
     "runtime": 88,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Jurassic World",
@@ -13322,7 +13280,7 @@ var movies = [
     "imdb_rating": 6.1,
     "runtime": 114,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Terminator Genisys",
@@ -13348,7 +13306,7 @@ var movies = [
     "imdb_rating": 7.5,
     "runtime": 60,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Southpaw",
@@ -13374,7 +13332,7 @@ var movies = [
     "imdb_rating": 6.9,
     "runtime": 92,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Ice Age",
@@ -13439,7 +13397,7 @@ var movies = [
     "imdb_rating": 6,
     "runtime": 98,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Matchstick Men",
@@ -13452,7 +13410,7 @@ var movies = [
     "imdb_rating": 7.3,
     "runtime": 116,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Lifted",
@@ -13465,7 +13423,7 @@ var movies = [
     "imdb_rating": 6.7,
     "runtime": 108,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Sherrybaby",
@@ -13478,7 +13436,7 @@ var movies = [
     "imdb_rating": 6.6,
     "runtime": 0,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Rush Hour 2",
@@ -13491,7 +13449,7 @@ var movies = [
     "imdb_rating": 6.6,
     "runtime": 90,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Inside Out",
@@ -29819,7 +29777,7 @@ var movies = [
     "imdb_rating": 6,
     "runtime": 92,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Garden State",
@@ -36475,7 +36433,7 @@ var movies = [
     "imdb_rating": 5.2,
     "runtime": 88,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Benji",
@@ -36904,7 +36862,7 @@ var movies = [
     "imdb_rating": 6.1,
     "runtime": 0,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "A Fantastic Woman",
@@ -38074,7 +38032,7 @@ var movies = [
     "imdb_rating": 4.9,
     "runtime": 99,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Aftermath",
@@ -43781,7 +43739,7 @@ var movies = [
     "imdb_rating": 5.7,
     "runtime": 86,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Russell Madness",
@@ -44353,7 +44311,7 @@ var movies = [
     "imdb_rating": 6.7,
     "runtime": 87,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Seven Deadly Words",
@@ -44626,7 +44584,7 @@ var movies = [
     "imdb_rating": 5.7,
     "runtime": 114,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Berlin Falling",
@@ -44704,7 +44662,7 @@ var movies = [
     "imdb_rating": 5.3,
     "runtime": 90,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "The Assassin's Code",
@@ -45237,7 +45195,7 @@ var movies = [
     "imdb_rating": 6.8,
     "runtime": 135,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "48 Hours to Live",
@@ -46030,7 +45988,7 @@ var movies = [
     "imdb_rating": 6.6,
     "runtime": 104,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Please Stand By",
@@ -46472,7 +46430,7 @@ var movies = [
     "imdb_rating": 6.6,
     "runtime": 114,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Left in Darkness",
@@ -46862,7 +46820,7 @@ var movies = [
     "imdb_rating": 6.8,
     "runtime": 0,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "DC Super Hero Girls: Hero of the Year",
@@ -47031,7 +46989,7 @@ var movies = [
     "imdb_rating": 7.6,
     "runtime": 78,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "LUV",
@@ -47993,7 +47951,7 @@ var movies = [
     "imdb_rating": 6.1,
     "runtime": 0,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Vampire Clay",
@@ -48617,7 +48575,7 @@ var movies = [
     "imdb_rating": 7.1,
     "runtime": 0,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Common Wealth",
@@ -48656,7 +48614,7 @@ var movies = [
     "imdb_rating": 6.1,
     "runtime": 120,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "Beyond Re-Animator",
@@ -48760,7 +48718,7 @@ var movies = [
     "imdb_rating": 6.9,
     "runtime": 114,
     "language": "English",
-    "ytid": ""
+    "ytid": "shVmpGH-YxA"
   },
   {
     "Title": "The Messengers",
