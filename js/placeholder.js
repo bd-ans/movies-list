@@ -1,6 +1,10 @@
 const moviesListPlaceholder = $('.js-movies-paceholder-list');
 const moviesPlaceholderCard = $('.js-movie-placeholder-card');
 
+const searchPlaceholderSelect = document.querySelector('.js-search-select');
+const searchPlaceholderSearchInput = document.querySelector('.js-search-input');
+const searchPlaceholderSortSelect = document.querySelector('.js-sort-select');
+
 var mainStatus = true;
 
 window.onload = function(){
@@ -19,6 +23,9 @@ for (let i = 0; i < qw.length; i++) {
 
 function placeholderRemover () {
   moviesListPlaceholder.classList.add('d-none')
+  searchPlaceholderSelect.classList.remove('placeholder')
+  searchPlaceholderSearchInput.classList.remove('placeholder')
+  searchPlaceholderSortSelect.classList.remove('placeholder')
 }
 setInterval(function () {
   if (mainStatus === false) {

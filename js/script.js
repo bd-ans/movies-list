@@ -137,7 +137,7 @@ searchSort.addEventListener('change', function () {
     if (searchSort.value === 'All') {
         stringSort = 'All';
         if (searchSelect.value === 'All') {
-            slectedSort = normalizedMovies;
+            slectedSort = cloneNormalizedMoviesTwo;
             selectedCatergory = slectedSort;
             mainData = slectedSort;
         }
@@ -145,28 +145,28 @@ searchSort.addEventListener('change', function () {
         mainData = selectedCatergory;
     } else {
         if (searchSort.value === 'A-Z') {
-            let selectCaterogyClone = selectedCatergory.slice();
+            let dddclone = selectedCatergory.slice();
             slectedSort = selectedCatergory.sort((a, b) => a.movieTitle.localeCompare(b.movieTitle));
             stringSort = 'A-Z';
-            selectedCatergory = selectCaterogyClone;
+            selectedCatergory = dddclone;
             mainData = slectedSort;
         } else if (searchSort.value === 'Z-A') {
-            let selectCaterogyClone = selectedCatergory.slice();
+            let dddclonee = selectedCatergory.slice();
             slectedSort = selectedCatergory.sort((a, b) => b.movieTitle.localeCompare(a.movieTitle));
             stringSort = 'Z-A';
-            selectedCatergory = selectCaterogyClone;
+            selectedCatergory = dddclonee;
             mainData = slectedSort;
         } else if (searchSort.value === '0-10') {
-            let selectCaterogyClone = selectedCatergory.slice();
+            let dddcloneee = selectedCatergory.slice();
             slectedSort = selectedCatergory.sort((a, b) => a.movieRating - b.movieRating);
             stringSort = '0-10';
-            selectedCatergory = selectCaterogyClone;
+            selectedCatergory = dddcloneee;
             mainData = slectedSort;
         } else if (searchSort.value === '10-0') {
-            let selectCaterogyClone = selectedCatergory.slice();
+            let dddcloneeee = selectedCatergory.slice();
             slectedSort = selectedCatergory.sort((a, b) => b.movieRating - a.movieRating);
             stringSort = '10-0';
-            selectedCatergory = selectCaterogyClone;
+            selectedCatergory = dddcloneeee;
             mainData = slectedSort;
         }
     }
