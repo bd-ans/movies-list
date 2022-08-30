@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/site.webmanifest">
   <title>Movies List</title>
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
@@ -12,35 +16,160 @@
   <main>
     <section id="section">
       <div class="container">
-        <div class="search-box mt-3" style="width: 190px;">
-          <input class="js-search-input form-control shadow" type="text" placeholder="enter a movie name">
-          <p class="mb-0 text-muted ms-1">select a category
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-            </svg>
-          </p>
-          <select class="js-search-select d-block form-select mt-1 shadow" name="search-select"></select>
+        <!-- search box -->
+        <div class="search-box mt-3 d-flex align-items-center justify-content-end">
+          <div class="d-flex justify-content-end">
+            <!-- search by caterogy -->
+            <div class="form-floating">
+              <select class="js-search-select form-select rounded-0 rounded-start shadow-none pt-0 pb-0 mb-0 mt-0" id="floatingSelect" aria-label="Floating label select example" style="height: 40px; padding-top: 16px !important; width: 161px;">
+                <option value="All" class="fw-bold text-primary" selected>All</option>
+              </select>
+              <label for="floatingSelect" class="pb-0 pt-2 mb-0">Search by category</label>
+            </div>
+            <!-- end search by caterogy -->
+
+            <!-- search by movie name -->
+            <div class="form-floating mb-3">
+              <input type="email" class="js-search-input form-control shadow-none border-start-0 border-end-0 rounded-0" id="floatingInput" placeholder="name@example.com" value="" style="height: 40px; padding-top: 20px;">
+              <label for="floatingInput" style="padding-top: 6px;">Search by movie title</label>
+            </div>
+            <!-- end search by movie name -->
+
+            <!-- sort by -->
+            <div class="form-floating">
+              <select class="js-sort-select form-select border-start-1 rounded-0 shadow-none pt-0 pb-0 mb-0 mt-0" id="sort-by-string" aria-label="Floating label select example" style="height: 40px; padding-top: 16px !important; width: 85px;">
+                <option value="All" class="text-primary" selected>All</option>
+                <option class="fw-bold" disabled>Sort alphabetically</option>
+                <option value="A-Z">A-Z</option>
+                <option value="Z-A">Z-A</option>
+                <option class="fw-bold" disabled>Sort Raiting</option>
+                <option value="0-10">0-10</option>
+                <option value="10-0">10-0</option>
+              </select>
+              <label for="floatingSelect" class="pb-0 pt-2 mb-0">Sort by</label>
+            </div>
+            <!-- end sort -->
+          </div>
         </div>
+        <!-- end search box -->
+
+        <!-- placeholder lists -->
+        <ul class="js-movies-paceholder-list list-unstyled d-flex flex-wrap justify-content-between mt-4">
+          <li class="mb-4 d-none">
+            <div class="js-movie-placeholder-card" style="visibility: hidden;">
+              <!-- card heading -->
+            <div class="card position-relative overflow-hidden shadow" style="width: 18rem; height: 32rem">
+              <div class="img-wrapper placeholder-wave">
+                <img src="https://i3.ytimg.com/vi/${movie.ytid}/hqdefault.jpg" class="js-movie-img card-img-top placeholder" alt="..." height="214">
+              </div>
+              <div class="card-body pb-0 placeholder-wave">
+                <h5 class="js-card-title mb-0 fs-6 fw-bol placeholder rounded-4 col-11">
+                  Name:
+                  <span class="js-movie-title fw-lighter">
+                    Patton Oswalt: Annihilation
+                  </span>
+                </h5>
+                <!-- accordion -->
+                <div class="accordion accordion-flush overflow-auto placeholder-glow" style="margin-left: -16px; margin-right: -16px;">
+                  <div class="accordion-item">
+                    <h2 class="js-accordian-header accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed shadow-none py-2 ps-3 placeholder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
+                        About the movie
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTw" class="js-accordian-collapse accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="js-movie-summary accordion-body overflow-auto placeholder" style="height: 120px;">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- list group -->
+              <ul class="list-group list-group-flush overflow-auto">
+                <li class="list-group-item placeholder-wave">
+                  <h6 class="card-title fs-6 fw-bold rounded-4 placeholder col-12">
+                    Full name: 
+                    <span class="js-movie-full-tittle fw-lighter">
+                    Patton Oswalt
+                  </span>
+                </h6>
+                </li>
+                <!-- release -->
+                <li class="list-group-item placeholder-wave">
+                  <h6 class="card-title fs-6 fw-bold placeholder rounded-5">
+                    Year of release: 
+                    <span class="js-movie-release-year fw-lighter">
+                    2017
+                  </span>
+                </h6>
+                </li>
+                <!-- caterogy -->
+                <li class="list-group-item placeholder-wave">
+                  <h6 class="card-title fs-6 fw-bold placeholder rounded-5" style="height: 20px;">
+                    Categories
+                    <span class="js-movie-caterogy fw-lighter">
+                      Uncategorized
+                  </span>
+                </h6>
+                </li>
+                <!-- rating -->
+                <li class="list-group-item d-flex justify-content-between align-items-center placeholder-wave">
+                  <h6 class="card-title fs-6 fw-bold placeholder rounded-5" style="height: 20px;">
+                    Rating:
+                    <span class="js-movie-rating fw-lighter">
+                      7.4
+                  </span>
+                </h6>
+                <!-- runtime -->
+                <h6 class="card-title fs-6 fw-bold mb-0 placeholder rounded-5" style="height: 20px;">
+                  Runtime:
+                  <span class="js-movie-runtime fw-lighter">
+                    66
+                </span>
+              </h6>
+                </li>
+                <!-- language & link -->
+                <li class="list-group-item d-flex justify-content-between align-items-center placeholder-wave">
+                  <h6 class="card-title fs-6 fw-bold mb-1 placeholder rounded-5" style="height: 20px;">
+                    Language:
+                    <span class="js-movie-language fw-lighter">
+                      English
+                  </span>
+                  </h6>
+                  <a href="#" class="js-yt-link card-link text-decoration-none placeholder rounded-5">You-Tube link</a>
+                </li>
+                <!-- lists end -->
+              </ul>
+            </div>
+            </div>
+          </li>
+        </ul>
+        <!-- end placeholder lists -->
+
+        <!-- movies list -->
         <ul class="js-movies-list list-unstyled d-flex flex-wrap justify-content-between mt-4">
         </ul>
+        <!-- end movies list -->
       </div>
     </section>
   </main>
   
+  <!-- main movies list template -->
   <template id="template-element">
     <li class="mb-4">
       <!-- card heading -->
       <div class="card position-relative overflow-hidden shadow" style="width: 18rem; height: 32rem">
-        <img src="https://i3.ytimg.com/vi/${movie.ytid}/hqdefault.jpg" class="js-movie-img card-img-top" alt="..." onerror="this.onerror=null; this.src='Default.jpg'">
+        <div class="img-wrapper">
+          <img src="https://i3.ytimg.com/vi/${movie.ytid}/hqdefault.jpg" class="js-movie-img card-img-top" alt="..." height="214">
+        </div>
         <div class="card-body pb-0">
-          <h5 class="card-title mb-0 fs-6 fw-bold">
+          <h5 class="js-card-title mb-0 fs-6 fw-bold rounded-4 col-12">
             Name:
             <span class="js-movie-title fw-lighter">
               Patton Oswalt: Annihilation
             </span>
           </h5>
           <!-- accordion -->
-          <div class="accordion accordion-flush overflow-auto" style="margin-left: -16px; margin-right: -16px;">
+          <div class="accordion accordion-flush overflow-auto placeholder-glow" style="margin-left: -16px; margin-right: -16px;">
             <div class="accordion-item">
               <h2 class="js-accordian-header accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed shadow-none py-2 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -56,7 +185,7 @@
         <!-- list group -->
         <ul class="list-group list-group-flush overflow-auto">
           <li class="list-group-item">
-            <h6 class="card-title fs-6 fw-bold">
+            <h6 class="card-title fs-6 fw-bold rounded-4">
               Full name: 
               <span class="js-movie-full-tittle fw-lighter">
               Patton Oswalt: Annihilation (2017)
@@ -65,7 +194,7 @@
           </li>
           <!-- release -->
           <li class="list-group-item">
-            <h6 class="card-title fs-6 fw-bold">
+            <h6 class="card-title fs-6 fw-bold rounded-5">
               Year of release: 
               <span class="js-movie-release-year fw-lighter">
               2017
@@ -74,7 +203,7 @@
           </li>
           <!-- caterogy -->
           <li class="list-group-item">
-            <h6 class="card-title fs-6 fw-bold">
+            <h6 class="card-title fs-6 fw-bold rounded-5">
               Categories
               <span class="js-movie-caterogy fw-lighter">
                 Uncategorized
@@ -83,14 +212,14 @@
           </li>
           <!-- rating -->
           <li class="list-group-item d-flex justify-content-between align-items-center">
-            <h6 class="card-title fs-6 fw-bold">
+            <h6 class="card-title fs-6 fw-bold rounded-5">
               Rating:
               <span class="js-movie-rating fw-lighter">
                 7.4
             </span>
           </h6>
           <!-- runtime -->
-          <h6 class="card-title fs-6 fw-bold mb-0">
+          <h6 class="card-title fs-6 fw-bold mb-0 rounded-5">
             Runtime:
             <span class="js-movie-runtime fw-lighter">
               66
@@ -99,19 +228,20 @@
           </li>
           <!-- language & link -->
           <li class="list-group-item d-flex justify-content-between align-items-center">
-            <h6 class="card-title fs-6 fw-bold mb-1">
+            <h6 class="card-title fs-6 fw-bold mb-1 rounded-5">
               Language:
               <span class="js-movie-language fw-lighter">
                 English
             </span>
             </h6>
-            <a href="#" class="js-yt-link card-link text-decoration-none">You-Tube link</a>
+            <a href="#" class="js-yt-link card-link text-decoration-none rounded-5">You-Tube Link</a>
           </li>
           <!-- lists end -->
         </ul>
       </div>
     </li>
   </template>
+  <!-- end main movies list template -->
   <style>
     ::-webkit-scrollbar {
       width: 8px;
@@ -126,13 +256,17 @@
       background: rgba(83, 81, 81, 0.521); 
       border-radius: 10px;
     }
+    body {
+      height: 150vh;
+      overflow: scroll;
+    }
     </style>
 </body>
 <!-- <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="./bootstrap/js/bootstrap.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/utils.js"></script>
+<script src="./js/placeholder.js"></script>
 <script src="./js/movies.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.min.js"></script> -->
 <script src="./js/script.js"></script>
 </html>
