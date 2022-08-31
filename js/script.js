@@ -28,13 +28,10 @@ normalizedMovies.push({
     })
 });
 // movie to normlaize end
-let normalizedMoviesClone = [];
 
 let cloneNormalizedMovies = normalizedMovies.slice();
 let cloneNormalizedMoviesOne = normalizedMovies.slice();
 const cloneNormalizedMoviesTwo = normalizedMovies.slice();
-
-let efefefefef = cloneNormalizedMovies.slice();
 
 // creating elemnts for movies list
 let createMovieElement = function (movie) {
