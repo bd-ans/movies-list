@@ -8,15 +8,17 @@ const searchBtn = $('.js-search-btn');
 
 
 let normalizedMovies = [];
-movies = movies.slice(0, 200);
+movies = movies.slice(0, 3);
 
 // movie to normlaize
 let films = movies.map((movie, i) => {
-normalizedMovies.push({
+    let movieCaterogy = movie.Categories.split('|');
+    movieCaterogy = movieCaterogy.join(', ');
+    normalizedMovies.push({
     movieTitle: movie.Title,
     movieFullTitle: movie.fulltitle,
     movieYear: movie.movie_year,
-    movieCaterogy: movie.Categories,
+    movieCaterogy: movieCaterogy,
     movieSummary: movie.summary,
     movieId: movie.imdb_id,
     movieRating: movie.imdb_rating,
@@ -76,7 +78,7 @@ let numbSort = 'All';
 let selectedCatergory = normalizedMovies;
 let mainData = normalizedMovies;
 let slectedSort = normalizedMovies;
-let categories = [...new Set(normalizedMovies.map(item => item.movieCaterogy.split('|')).flat())].sort();
+let categories = [...new Set(movies.map(item => item.Categories.split('|')).flat())].sort();
 categories.forEach(item => {
     let option = document.createElement('option')
     option.textContent = item
