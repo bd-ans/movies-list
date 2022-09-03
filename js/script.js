@@ -5,6 +5,7 @@ const searchInput = $('.js-search-input');
 const searchSelect = $('.js-search-select');
 const searchSort = $('.js-sort-select');
 const searchBtn = $('.js-search-btn');
+const elFailTxt = $('.js-fail-txt');
 
 
 let normalizedMovies = [];
@@ -132,6 +133,8 @@ searchSelect.addEventListener('change', function () {
     }
     searchInput.value = null;
     renderMovies(selectedCatergory);
+
+    elFailTxt.classList.add('d-none');
 });
 // catergory select end
 
@@ -141,7 +144,6 @@ searchSort.addEventListener('change', function () {
         stringSort = 'All';
         if (searchSelect.value === 'All') {
             slectedSort = cloneNormalizedMoviesTwo;
-            // selectedCatergory = slectedSort;
             mainData = slectedSort;
         } else {
             slectedSort = selectedCatergory;
@@ -176,6 +178,8 @@ searchSort.addEventListener('change', function () {
     }
     searchInput.value = null;
     renderMovies(slectedSort);
+
+    elFailTxt.classList.add('d-none');
 });
 // sort select end
 
@@ -184,6 +188,11 @@ searchInput.oninput = function () {
     let value = searchInput.value;
     let regExp = new RegExp(value, 'gi');
     let filt = mainData.filter(item => regExp.test(item.movieTitle));
+    if (filt == '') {
+        elFailTxt.classList.remove('d-none');
+    } else {
+        elFailTxt.classList.add('d-none');
+    }
     renderMovies(filt);
 }
 // Search input end
