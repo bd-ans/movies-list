@@ -51,7 +51,6 @@
             <!-- end sort -->
           </div>
         </div>
-        <!-- end search box -->
 
         <!-- placeholder lists -->
         <ul class="js-movies-paceholder-list list-unstyled d-flex flex-wrap justify-content-between mt-4">
@@ -144,12 +143,13 @@
       </div>
     </section>
   </main>
+  <!-- Button trigger modal -->
   
   <!-- main movies list template -->
   <template id="template-element">
     <li class="mb-4">
       <!-- card heading -->
-      <div class="card position-relative overflow-hidden shadow" style="width: 18rem; height: 30rem">
+      <div class="card position-relative overflow-hidden shadow" style="width: 18rem; height: 29rem">
         <div class="img-wrapper">
           <img src="https://i3.ytimg.com/vi/${movie.ytid}/hqdefault.jpg" class="js-movie-img card-img-top" alt="..." height="214">
         </div>
@@ -160,19 +160,6 @@
               Patton Oswalt: Annihilation
             </span>
           </h5>
-          <!-- accordion -->
-          <div class="accordion accordion-flush overflow-auto placeholder-glow" style="margin-left: -16px; margin-right: -16px;">
-            <div class="accordion-item">
-              <h2 class="js-accordian-header accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed shadow-none py-2 ps-3" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
-                  About the movie
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="js-accordian-collapse accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="js-movie-summary accordion-body overflow-auto" style="height: 120px;">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-              </div>
-            </div>
-          </div>
         </div>
         <!-- list group -->
         <ul class="list-group list-group-flush overflow-auto">
@@ -185,30 +172,14 @@
             </span>
           </h6>
           </li>
-          <!-- caterogy -->
-          <li class="list-group-item">
-            <h6 class="card-title fs-6 fw-bold rounded-5">
-              Categories
-              <span class="js-movie-caterogy fw-lighter">
-                Uncategorized
-            </span>
-          </h6>
-          </li>
           <!-- rating -->
           <li class="list-group-item d-flex justify-content-between align-items-center">
             <h6 class="card-title fs-6 fw-bold rounded-5">
               Rating:
               <span class="js-movie-rating fw-lighter">
                 7.4
-            </span>
-          </h6>
-          <!-- runtime -->
-          <h6 class="card-title fs-6 fw-bold mb-0 rounded-5">
-            Runtime:
-            <span class="js-movie-runtime fw-lighter">
-              66
-          </span>
-        </h6>
+              </span>
+            </h6>
           </li>
           <!-- language & link -->
           <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -220,7 +191,75 @@
             </h6>
             <a href="#" class="js-yt-link card-link text-decoration-none rounded-5">You-Tube Link</a>
           </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <button type="button" class="btn btn-light border-secondary shadow-sm js-modal-btn w-100" data-bs-toggle="modal" data-bs-target="#exampleModalTest">
+              More Info
+            </button>
+          </li>
           <!-- lists end -->
+          <!-- Modal -->
+          <div class="modal modal-lg fade js-modal" id="exampleModalTest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content" style="max-height: 453px;">
+                <div class="modal-header">
+                  <h5 class="modal-title js-modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- modal body -->
+                <div class="modal-body js-modal-body overflow-hidden">
+                  <div class="modal-inner d-flex">
+                    <img src="https://i3.ytimg.com/vi/${movie.ytid}/hqdefault.jpg" class="js-modal-movie-img rounded-3 w-50" alt="..." width="383" height="287">
+                    <!-- modal info -->
+                    <div class="modal-info-box ms-2">
+                      <div class="about-movie-box" style="height: 190px;">
+                        <span class="text-muted d-flex align-items-center mt-1 user-select-none">About the movie
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle ms-1 mt-1" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                          </svg>
+                        </span>
+                        <!-- summary box -->
+                        <div class="summary-box overflow-auto w-100 mt-1" style="height: 158px;">
+                          <h5 class="js-movie-summary">
+                            <!-- this i a movie summary text -->
+                          </h5>
+                        </div>
+                      </div>
+                      <hr class="mt-0 mb-0 ">
+                      <!-- other informs -->
+                      <div class="rating-and-runtime-box d-flex justify-content-between align-items-center mt-2 mx-2">
+                        <!-- rating -->
+                        <h6 class="card-title fs-6 fw-bold rounded-5 mb-0">
+                          Rating:
+                          <span class="js-movie-rating fw-lighter">
+                            7.4
+                          </span>
+                        </h6>
+                        <!-- runtime -->
+                        <h6 class="card-title fs-6 fw-bold mb-0 rounded-5">
+                          Runtime:
+                          <span class="js-movie-runtime fw-lighter">
+                            66
+                          </span>
+                        </h6>
+                      </div>
+                      <hr class="mt-2">
+                      <!-- category -->
+                      <h6 class="card-title fs-6 fw-bold rounded-5">
+                        Categories:
+                        <span class="js-movie-caterogy fw-lighter">
+                          Uncategorized
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-light border-secondary shadow-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Modal end-->
         </ul>
       </div>
     </li>

@@ -8,7 +8,7 @@ const searchBtn = $('.js-search-btn');
 
 
 let normalizedMovies = [];
-movies = movies.slice(0, 3);
+movies = movies.slice(0, 200);
 
 // movie to normlaize
 let films = movies.map((movie, i) => {
@@ -40,7 +40,10 @@ let createMovieElement = function (movie) {
     let movieElement = moviesCardTemplate.cloneNode(true);
     movieElement.querySelector('.js-movie-img').src = movie.img;
     movieElement.querySelector('.js-movie-img').alt = movie.movieTitle;
+    movieElement.querySelector('.js-modal-movie-img').src = movie.img;
+    movieElement.querySelector('.js-modal-movie-img').alt = movie.movieTitle;
     movieElement.querySelector('.js-movie-title').textContent = movie.movieTitle;
+    movieElement.querySelector('.js-modal-title').textContent = movie.movieFullTitle;
     movieElement.querySelector('.js-movie-summary').textContent = movie.movieSummary;
     movieElement.querySelector('.js-movie-release-year').textContent = movie.movieYear;
     movieElement.querySelector('.js-movie-caterogy').textContent = movie.movieCaterogy;
@@ -48,10 +51,9 @@ let createMovieElement = function (movie) {
     movieElement.querySelector('.js-movie-runtime').textContent = movie.movieRuntime;
     movieElement.querySelector('.js-movie-language').textContent = movie.movieLanguage;
     movieElement.querySelector('.js-yt-link').href = `https://www.youtube.com/watch?v=${movie.movieYtId}`;
-    movieElement.querySelector('.js-accordian-header').id = `flush-heading${movie.id}`;
-    movieElement.querySelector('.accordion-button').setAttribute('data-bs-target', `#flush-collapse${movie.id}`);
-    movieElement.querySelector('.accordion-button').setAttribute('aria-controls', `flush-collapse${movie.id}`);
-    movieElement.querySelector('.js-accordian-collapse').id = `flush-collapse${movie.id}`
+    movieElement.querySelector('.js-modal').id = `exampleModal${movie.id}`;
+    movieElement.querySelector('.js-modal-title').id = `exampleModal${movie.id}`;
+    movieElement.querySelector('.js-modal-btn').setAttribute('data-bs-target', `#exampleModal${movie.id}`);
 
     return movieElement;
 }
