@@ -12,7 +12,7 @@ const elFailTxt = $('.js-fail-txt');
 let normalizedMovies = [];
 let savedMovies = JSON.parse(localStorage.getItem('savedMovies') || '[]');
 
-movies = movies.slice(0, 200);
+movies = movies.slice(0, 160);
 
 // movie to normlaize
 let films = movies.map((movie, i) => {
