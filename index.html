@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-</div>
-  <main>
+
+  <main class="main" style="pointer-events: none;">
     <section id="section">
       <div class="container">
         <!-- search box -->
@@ -21,7 +21,7 @@
           <div class="d-flex justify-content-end">
             <!-- search by caterogy -->
             <div class="form-floating placeholder-wave">
-              <select class="js-search-select form-select rounded-0 rounded-start shadow-none pt-0 pb-0 mb-0 mt-0 placeholder" id="floatingSelect" aria-label="Floating label select example" style="height: 40px; padding-top: 16px !important; width: 161px;">
+              <select class="js-search-select form-select rounded-0 rounded-start shadow-none pt-0 pb-0 mb-0 mt-0 placeholder" id="floatingSelect" aria-label="Floating label select example" style="height: 40px; padding-top: 16px !important; width: 161px; cursor: pointer;">
                 <option value="All" class="fw-bold text-primary" selected>All</option>
               </select>
               <label for="floatingSelect" class="pb-0 pt-2 mb-0 pla">Search by category</label>
@@ -30,14 +30,14 @@
 
             <!-- search by movie name -->
             <div class="form-floating mb-3 placeholder-wave">
-              <input type="email" class="js-search-input form-control shadow-none border-start-0 border-end-0 rounded-0 placeholder" id="floatingInput" placeholder="name@example.com" value="" style="height: 40px; padding-top: 20px;">
+              <input type="text" class="js-search-input form-control shadow-none border-start-0 border-end-0 rounded-0 placeholder" id="floatingInput" placeholder="name@example.com" value="" style="height: 40px; padding-top: 20px;">
               <label for="floatingInput" style="padding-top: 6px;">Search by movie title</label>
             </div>
             <!-- end search by movie name -->
 
             <!-- sort by -->
             <div class="form-floating placeholder-wave">
-              <select class="js-sort-select form-select border-start-1 rounded-0 rounded-end  shadow-none pt-0 pb-0 mb-0 mt-0 placeholder" id="sort-by-string" aria-label="Floating label select example" style="height: 40px; padding-top: 16px !important; width: 85px;">
+              <select class="js-sort-select form-select border-start-1 border-end-0 rounded-0 shadow-none pt-0 pb-0 mb-0 mt-0 placeholder" id="sort-by-string" aria-label="Floating label select example" style="height: 40px; padding-top: 16px !important; width: 85px; cursor: pointer;">
                 <option value="All" class="text-primary" selected>All</option>
                 <option class="fw-bold" disabled>Sort alphabetically</option>
                 <option value="A-Z">A-Z</option>
@@ -48,7 +48,13 @@
               </select>
               <label for="floatingSelect" class="pb-0 pt-2 mb-0">Sort by</label>
             </div>
-            <!-- end sort -->
+            <!-- end sort by -->
+
+            <!-- bookmark btn -->
+            <div class="bookmarks-btn-box placeholder rounded-end rounded-65" style="height: 40px;">
+              <button class="js-bookmarks-btn btn btn-light border-secondary border-opacity-25 pt-0 pb-0 d-flex justify-content-center align-items-center rounded-0 rounded-end shadow-none" style="width: 104px; height: 40px;">Bookmarks</button>
+            </div>
+            <!-- end bookmark btn -->
           </div>
         </div>
         <!-- fail box -->
@@ -70,76 +76,46 @@
           <li class="mb-4 d-none">
             <div class="js-movie-placeholder-card" style="visibility: hidden;">
               <!-- card heading -->
-            <div class="card position-relative overflow-hidden shadow" style="width: 18rem; height: 30rem">
+            <div class="card position-relative overflow-hidden shadow" style="width: 18rem; height: 29rem">
               <div class="img-wrapper placeholder-wave">
                 <img src="https://i3.ytimg.com/vi/${movie.ytid}/hqdefault.jpg" class="js-movie-img card-img-top placeholder" alt="..." height="214">
               </div>
               <div class="card-body pb-0 placeholder-wave">
-                <h5 class="js-card-title mb-0 fs-6 fw-bol placeholder rounded-4 col-11">
-                  Name:
-                  <span class="js-movie-title fw-lighter">
-                    Patton Oswalt: Annihilation
-                  </span>
+                <h5 class="mb-0 fs-6 fw-bold placeholder rounded-4 col-12">
+                  N
                 </h5>
-                <!-- accordion -->
-                <div class="accordion accordion-flush overflow-auto placeholder-glow" style="margin-left: -16px; margin-right: -16px;">
-                  <div class="accordion-item">
-                    <h2 class="js-accordian-header accordion-header" id="flush-headingTwo">
-                      <button class="accordion-button collapsed shadow-none py-2 ps-3 placeholder" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseOne">
-                        About the movie
-                      </button>
-                    </h2>
-                    <div id="flush-collapseTw" class="js-accordian-collapse accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                      <div class="js-movie-summary accordion-body overflow-auto placeholder" style="height: 120px;">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                    </div>
-                  </div>
-                </div>
               </div>
               <!-- list group -->
               <ul class="list-group list-group-flush overflow-auto">
                 <!-- release -->
                 <li class="list-group-item placeholder-wave">
-                  <h6 class="card-title fs-6 fw-bold placeholder rounded-5">
-                    Year of release: 
-                    <span class="js-movie-release-year fw-lighter">
-                    2017
-                  </span>
-                </h6>
-                </li>
-                <!-- caterogy -->
-                <li class="list-group-item placeholder-wave">
-                  <h6 class="card-title fs-6 fw-bold placeholder rounded-5" style="height: 20px;">
-                    Categories
-                    <span class="js-movie-caterogy fw-lighter">
-                      Uncategorized
-                  </span>
-                </h6>
+                  <h6 class="card-title placeholder fs-6 fw-bold rounded-5 col-8">
+                    Y
+                  </h6>
                 </li>
                 <!-- rating -->
                 <li class="list-group-item d-flex justify-content-between align-items-center placeholder-wave">
-                  <h6 class="card-title fs-6 fw-bold placeholder rounded-5" style="height: 20px;">
-                    Rating:
-                    <span class="js-movie-rating fw-lighter">
-                      7.4
-                  </span>
-                </h6>
-                <!-- runtime -->
-                <h6 class="card-title fs-6 fw-bold mb-0 placeholder rounded-5" style="height: 20px;">
-                  Runtime:
-                  <span class="js-movie-runtime fw-lighter">
-                    66
-                </span>
-              </h6>
+                  <h6 class="card-title fs-6 fw-bold rounded-5 placeholder col-4">
+                    R
+                  </h6>
                 </li>
                 <!-- language & link -->
                 <li class="list-group-item d-flex justify-content-between align-items-center placeholder-wave">
-                  <h6 class="card-title fs-6 fw-bold mb-1 placeholder rounded-5" style="height: 20px;">
-                    Language:
-                    <span class="js-movie-language fw-lighter">
-                      English
-                  </span>
+                  <h6 class="card-title fs-6 fw-bold mb-0 rounded-5 placeholder col-6">
+                    L
                   </h6>
-                  <a href="#" class="js-yt-link card-link text-decoration-none placeholder rounded-5">You-Tube link</a>
+                  <a href="#" class="card-link text-decoration-none rounded-5 placeholder col-5">Y</a>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center placeholder-wave">
+                  <button type="button" class="btn btn-light border-secondary shadow-sm w-100 rounded-0 rounded-start placeholder" data-bs-toggle="modal" data-bs-target="#exampleModalTest">
+                    More Info
+                  </button>
+                  <button type="button" class="btn btn-light border-secondary shadow-sm js-modal-btn w-25 border-start-0 rounded-0 rounded-end placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
+                      <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                      <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
+                    </svg>
+                  </button>
                 </li>
                 <!-- lists end -->
               </ul>
@@ -205,8 +181,15 @@
             <a href="#" class="js-yt-link card-link text-decoration-none rounded-5">You-Tube Link</a>
           </li>
           <li class="list-group-item d-flex justify-content-between align-items-center">
-            <button type="button" class="btn btn-light border-secondary shadow-sm js-modal-btn w-100" data-bs-toggle="modal" data-bs-target="#exampleModalTest">
+            <button type="button" class="btn btn-light border-secondary shadow-sm js-modal-btn w-100 rounded-0 rounded-start" data-bs-toggle="modal" data-bs-target="#exampleModalTest">
               More Info
+            </button>
+            <!-- bookmark btn -->
+            <button type="button" class="js-add-bookmark-btn btn btn-light border-secondary shadow-sm js-modal-btn w-25 border-start-0 rounded-0 rounded-end">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
+              </svg>
             </button>
           </li>
           <!-- lists end -->
@@ -270,9 +253,11 @@
 
                   </div>
                 </div>
+                <!-- modal btn -->
                 <div class="modal-footer">
                   <button type="button" class="btn btn-light border-secondary shadow-sm" data-bs-dismiss="modal">Close</button>
                 </div>
+                <!-- modal btn -->
               </div>
             </div>
           </div>

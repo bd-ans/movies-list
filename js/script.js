@@ -5,11 +5,16 @@ const searchInput = $('.js-search-input');
 const searchSelect = $('.js-search-select');
 const searchSort = $('.js-sort-select');
 const searchBtn = $('.js-search-btn');
+const elBookmarksBtn = $('.js-bookmarks-btn');
 const elFailTxt = $('.js-fail-txt');
 
 
 let normalizedMovies = [];
-movies = movies.slice(0, 200);
+let savedMovies = JSON.parse(localStorage.getItem('savedMovies') || '[]');
+let localSavedMovies = '';
+// localSavedMovies = JSON.parse(localStorage.getItem('savedMovies') || '[]');
+
+movies = movies.slice(0, 2);
 
 // movie to normlaize
 let films = movies.map((movie, i) => {
@@ -30,7 +35,7 @@ let films = movies.map((movie, i) => {
     id: i
     })
 });
-// movie to normlaize end
+let elAddBookmarkBtn = document.querySelectorAll('.js-add-bookmark-btn');
 
 let cloneNormalizedMovies = normalizedMovies.slice();
 let cloneNormalizedMoviesOne = normalizedMovies.slice();
@@ -55,9 +60,12 @@ let createMovieElement = function (movie) {
     movieElement.querySelector('.js-modal').id = `exampleModal${movie.id}`;
     movieElement.querySelector('.js-modal-title').id = `exampleModal${movie.id}`;
     movieElement.querySelector('.js-modal-btn').setAttribute('data-bs-target', `#exampleModal${movie.id}`);
+    movieElement.querySelector('.js-add-bookmark-btn').id = `addBookmarkBtn${movie.id}`;
+    elAddBookmarkBtn = movieElement.querySelector(`#addBookmarkBtn${movie.id}`);
 
     return movieElement;
 }
+
 
 // main render function
 let renderMovies = function (normalizedMovies) {
@@ -66,16 +74,64 @@ let renderMovies = function (normalizedMovies) {
 
     normalizedMovies.forEach(movie => {
         fragment.appendChild(createMovieElement(movie));
+        var tst1 = true;
+        // bookmark btn
+        elAddBookmarkBtn.addEventListener('click', function () {
+            var tst = true;
+            if (savedMovies.length == 0) {
+                savedMovies.push(movie);
+                localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
+            } else {
+                savedMovies.forEach(item => {
+                    if (item.movieId == movie.movieId) {
+                        tst = false;
+                        savedMovies.splice(savedMovies.indexOf(item), 1);
+                        localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
+/*                         tst1 = tst;
+                        console.log(tst1); */
+                    }
+                })
+                if (tst) {
+                    savedMovies.push(movie);
+                    localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
+/*                     tst1 = tst;
+                    console.log(tst1); */
+                }
+            }
+            tst1 = tst;
+        })
+        
     });
-
+    
     moviesList.appendChild(fragment);
 }
 
+
+
 renderMovies(normalizedMovies);
-// main render function end
 
 let stringSort = 'All';
 let numbSort = 'All';
+
+
+
+elBookmarksBtn.addEventListener('click', function () {
+    if (elBookmarksBtn.textContent == 'Bookmarks') {
+        elBookmarksBtn.textContent = 'All Movies';
+        renderMovies(savedMovies);
+    } else {
+        elBookmarksBtn.textContent = 'Bookmarks';
+/*         let bookMarksMovies = normalizedMovies.filter(movie => {
+            savedMovies.forEach(item => {
+                if (item.movieId == movie.movieId) {
+                    return movie;
+                }
+            })
+        }) */
+        // renderMovies(bookMarksMovies);
+        renderMovies(normalizedMovies);
+    }
+})
 
 // catergory select
 let selectedCatergory = normalizedMovies;
@@ -196,3 +252,5 @@ searchInput.oninput = function () {
     renderMovies(filt);
 }
 // Search input end
+
+// localStorage.removeItem('savedMovies');
