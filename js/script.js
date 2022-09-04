@@ -11,10 +11,8 @@ const elFailTxt = $('.js-fail-txt');
 
 let normalizedMovies = [];
 let savedMovies = JSON.parse(localStorage.getItem('savedMovies') || '[]');
-let localSavedMovies = '';
-// localSavedMovies = JSON.parse(localStorage.getItem('savedMovies') || '[]');
 
-movies = movies.slice(0, 2);
+movies = movies.slice(0, 200);
 
 // movie to normlaize
 let films = movies.map((movie, i) => {
@@ -62,6 +60,25 @@ let createMovieElement = function (movie) {
     movieElement.querySelector('.js-modal-btn').setAttribute('data-bs-target', `#exampleModal${movie.id}`);
     movieElement.querySelector('.js-add-bookmark-btn').id = `addBookmarkBtn${movie.id}`;
     elAddBookmarkBtn = movieElement.querySelector(`#addBookmarkBtn${movie.id}`);
+    elAddBookmarkBtn.classList.remove('text-danger');
+
+    // add bookmark btn
+    function myFunction() {
+        if (savedMovies.length == 0) {
+            elAddBookmarkBtn.classList.remove('text-danger');
+        } else {
+            savedMovies.forEach((savedMovie) => {
+                if (savedMovie.movieId == movie.movieId) {
+                    elAddBookmarkBtn.classList.add('active-bookmark');
+                    elAddBookmarkBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bookmark-dash" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M5.5 6.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                    </svg>`;
+                }
+            })
+        }
+    }
+    myFunction();
 
     return movieElement;
 }
@@ -74,39 +91,49 @@ let renderMovies = function (normalizedMovies) {
 
     normalizedMovies.forEach(movie => {
         fragment.appendChild(createMovieElement(movie));
-        var tst1 = true;
+
         // bookmark btn
         elAddBookmarkBtn.addEventListener('click', function () {
-            var tst = true;
+            var bookmarkBtnStatus = true;
             if (savedMovies.length == 0) {
                 savedMovies.push(movie);
                 localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
             } else {
                 savedMovies.forEach(item => {
                     if (item.movieId == movie.movieId) {
-                        tst = false;
+                        bookmarkBtnStatus = false;
                         savedMovies.splice(savedMovies.indexOf(item), 1);
                         localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
-/*                         tst1 = tst;
-                        console.log(tst1); */
                     }
                 })
-                if (tst) {
+                if (bookmarkBtnStatus) {
                     savedMovies.push(movie);
                     localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
-/*                     tst1 = tst;
-                    console.log(tst1); */
                 }
             }
-            tst1 = tst;
+            
+            // on click change bookmark btn color
+            elAddBookmarkBtn = document.querySelector('#addBookmarkBtn' + movie.id);
+            elAddBookmarkBtn.classList.toggle('active-bookmark');
+            if (elAddBookmarkBtn.classList.contains('active-bookmark')) {
+                elAddBookmarkBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bookmark-dash" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M5.5 6.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5z"/>
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                </svg>`;
+            } else {
+                elAddBookmarkBtn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-bookmark-plus" viewBox="0 0 16 16">
+                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                <path d="M8 4a.5.5 0 0 1 .5.5V6H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V7H6a.5.5 0 0 1 0-1h1.5V4.5A.5.5 0 0 1 8 4z"/>
+                </svg>`;
+            }
+            localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
         })
-        
     });
+    savedMovies.forEach(itemt => {
+    })
     
     moviesList.appendChild(fragment);
 }
-
-
 
 renderMovies(normalizedMovies);
 
@@ -116,20 +143,21 @@ let numbSort = 'All';
 
 
 elBookmarksBtn.addEventListener('click', function () {
+    elFailTxt.classList.add('d-none');
     if (elBookmarksBtn.textContent == 'Bookmarks') {
         elBookmarksBtn.textContent = 'All Movies';
         renderMovies(savedMovies);
+        mainData = savedMovies;
     } else {
         elBookmarksBtn.textContent = 'Bookmarks';
-/*         let bookMarksMovies = normalizedMovies.filter(movie => {
-            savedMovies.forEach(item => {
-                if (item.movieId == movie.movieId) {
-                    return movie;
-                }
-            })
-        }) */
-        // renderMovies(bookMarksMovies);
         renderMovies(normalizedMovies);
+        mainData = normalizedMovies;
+    }
+
+    if (savedMovies.length == 0) {
+        elBookmarksBtn.textContent = 'Bookmarks';
+        renderMovies(normalizedMovies);
+        mainData = normalizedMovies;
     }
 })
 
