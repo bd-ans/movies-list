@@ -7,7 +7,7 @@ const searchSort = $('.js-sort-select');
 const searchBtn = $('.js-search-btn');
 const elBookmarksBtn = $('.js-bookmarks-btn');
 const elFailTxt = $('.js-fail-txt');
-
+let elAddBookmarkBtn = document.querySelectorAll('.js-add-bookmark-btn');
 
 let normalizedMovies = [];
 let savedMovies = JSON.parse(localStorage.getItem('savedMovies') || '[]');
@@ -33,7 +33,6 @@ let films = movies.map((movie, i) => {
     id: i
     })
 });
-let elAddBookmarkBtn = document.querySelectorAll('.js-add-bookmark-btn');
 
 let cloneNormalizedMovies = normalizedMovies.slice();
 let cloneNormalizedMoviesOne = normalizedMovies.slice();
@@ -92,7 +91,7 @@ let renderMovies = function (normalizedMovies) {
     normalizedMovies.forEach(movie => {
         fragment.appendChild(createMovieElement(movie));
 
-        // bookmark btn
+        //on  bookmark btn clicked
         elAddBookmarkBtn.addEventListener('click', function () {
             var bookmarkBtnStatus = true;
             if (savedMovies.length == 0) {
@@ -104,6 +103,10 @@ let renderMovies = function (normalizedMovies) {
                         bookmarkBtnStatus = false;
                         savedMovies.splice(savedMovies.indexOf(item), 1);
                         localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
+                        // render saved movies
+                        setTimeout(() => {
+                            renderMovies(savedMovies);
+                        }, 400);
                     }
                 })
                 if (bookmarkBtnStatus) {
@@ -112,7 +115,7 @@ let renderMovies = function (normalizedMovies) {
                 }
             }
             
-            // on click change bookmark btn color
+            // on click change bookmark btn icon
             elAddBookmarkBtn = document.querySelector('#addBookmarkBtn' + movie.id);
             elAddBookmarkBtn.classList.toggle('active-bookmark');
             if (elAddBookmarkBtn.classList.contains('active-bookmark')) {
@@ -127,10 +130,11 @@ let renderMovies = function (normalizedMovies) {
                 </svg>`;
             }
             localStorage.setItem('savedMovies', JSON.stringify(savedMovies));
+            selectedCatergory = savedMovies;
+            mainData = savedMovies;
+            slectedSort = savedMovies;
         })
     });
-    savedMovies.forEach(itemt => {
-    })
     
     moviesList.appendChild(fragment);
 }
@@ -139,7 +143,6 @@ renderMovies(normalizedMovies);
 
 let stringSort = 'All';
 let numbSort = 'All';
-
 
 
 elBookmarksBtn.addEventListener('click', function () {
@@ -161,6 +164,7 @@ elBookmarksBtn.addEventListener('click', function () {
     }
 })
 
+
 // catergory select
 let selectedCatergory = normalizedMovies;
 let mainData = normalizedMovies;
@@ -172,6 +176,7 @@ categories.forEach(item => {
     option.value = item
     searchSelect.append(option)
 })
+
 let cloneSelectdedCatergory = selectedCatergory.slice();
 searchSelect.addEventListener('change', function () {
     let filt = normalizedMovies.filter(item => item.movieCaterogy.includes(searchSelect.value))
