@@ -165,7 +165,7 @@ elBookmarksBtn.addEventListener('click', function () {
 })
 
 
-// catergory select
+// category select
 let selectedCatergory = normalizedMovies;
 let mainData = normalizedMovies;
 let slectedSort = normalizedMovies;
@@ -225,7 +225,7 @@ searchSelect.addEventListener('change', function () {
 
     elFailTxt.classList.add('d-none');
 });
-// catergory select end
+// category select end
 
 // sort select
 searchSort.addEventListener('change', function () {
