@@ -14,7 +14,7 @@ let savedMovies = JSON.parse(localStorage.getItem('savedMovies') || '[]');
 
 movies = movies.slice(0, 160);
 
-// movie to normlaize
+// movie to normalize
 let films = movies.map((movie, i) => {
     let movieCaterogy = movie.Categories.split('|');
     movieCaterogy = movieCaterogy.join(', ');
